@@ -6,7 +6,7 @@
   --fone-color: #e5e5e5;
 }
 
-/*-------------------Style Studio page-------------------*/
+/*-------------------Style Studio/Portfolio page-------------------*/
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -634,7 +634,7 @@ header {
   right: 0;
   bottom: 0;
   width: 100%;
-  height: 100%;
+  height: 101%;
   display: flex;
   justify-content: center;
   align-items: center;
