@@ -214,7 +214,8 @@ header {
 }
 
 .feature-title,
-.title-social {
+.title-social,
+.title-subscription {
   margin-top: 0px;
   margin-bottom: 10px;
   font-weight: 700;
@@ -497,9 +498,11 @@ header {
 .footer-social {
   margin-top: 0px;
   margin-bottom: 0px;
+  margin-right: 93px;
 }
 
-.footer .title-social {
+.footer .title-social,
+.footer .title-subscription {
   margin-top: 0px;
   margin-bottom: 20px;
   color: var(--primary-fone-color);
@@ -526,6 +529,59 @@ header {
 .social-icon:hover,
 .social-icon:focus {
   background-color: var(--link-color);
+}
+
+.form {
+  display: inline-flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+
+.form-field {
+  position: relative;
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+}
+
+.form-label {
+  display: block;
+  position: absolute;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+}
+
+.form-input {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 15px, 16px, 15px, 16px;
+  font: inherit;
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+.button-subscription {
+  width: 200px;
+  height: 50px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  border-radius: 4px;
+  padding: 10px 32px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  color: var(--primary-fone-color);
+  background: var(--link-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 
 /*-------------------------Style Portfolio page-------------------------*/
