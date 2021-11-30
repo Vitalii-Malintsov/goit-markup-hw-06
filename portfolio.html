@@ -11,44 +11,43 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./css/modal.css">
 </head>
 
 <body>
 
     <!--Шапка страницы-->
-<header>
-    <div class="container box">
-        <nav class="header-nav">
-            <a href="" class="logo"><span class="accent">Web</span>Studio</a>
-            <ul class="list site-nav">
-                <li class="item page-item">
-                    <a class="header-page" href="./index.html">Студия</a>
+    <header>
+        <div class="container box">
+            <nav class="header-nav">
+                <a href="" class="logo"><span class="accent">Web</span>Studio</a>
+                <ul class="list site-nav">
+                    <li class="item page-item">
+                        <a class="header-page" href="./index.html">Студия</a>
+                    </li>
+                    <li class="item page-item">
+                        <a class="header-page active" href="./portfolio.html">Портфолио</a>
+                    </li>
+                    <li class="item page-item">
+                        <a class="header-page" href="./contact.html">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="contact list">
+                <li class="item">
+                    <a class="header-contact" href="Mailto:info@devstudio.com">
+                        <svg class="icon-envelope" width="16" height="12">
+                            <use href="./images/icons.svg#icon-envelope"></use>
+                        </svg>info@devstudio.com</a>
                 </li>
-                <li class="item page-item">
-                    <a class="header-page active" href="./portfolio.html">Портфолио</a>
-                </li>
-                <li class="item page-item">
-                    <a class="header-page" href="./contact.html">Контакты</a>
+                <li class="item">
+                    <a class="header-contact" href="tel:+380961111111">
+                        <svg class="icon-smartphone" width="10" height="16">
+                            <use href="./images/icons.svg#icon-smartphone"></use>
+                        </svg>+38 096 111 11 11</a>
                 </li>
             </ul>
-        </nav>
-        <ul class="contact list">
-            <li class="item">
-                <a class="header-contact" href="Mailto:info@devstudio.com">
-                    <svg class="icon-envelope" width="16" height="12">
-                        <use href="./images/icons.svg#icon-envelope"></use>
-                    </svg>info@devstudio.com</a>
-            </li>
-            <li class="item">
-                <a class="header-contact" href="tel:+380961111111">
-                    <svg class="icon-smartphone" width="10" height="16">
-                        <use href="./images/icons.svg#icon-smartphone"></use>
-                    </svg>+38 096 111 11 11</a>
-            </li>
-        </ul>
-    </div>
-</header>
+        </div>
+    </header>
 
     <main>
 
@@ -241,7 +240,7 @@
                             <a class="footer-nav" href="tel:+380961111111">+38 096 111 11 11</a>
                         </li>
                     </ul>
-                    </address>
+                </address>
             </div>
             <div class="footer-social">
                 <h3 class="title-social">ПРИСОЕДИНЯЙТЕСЬ</h3>
@@ -275,6 +274,21 @@
                         </a>
                     </li>
                 </ul>
+            </div>
+            <div class="footer-subscription">
+                <h3 class="title-subscription">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h3>
+                <form class="form-subscription" autocomplete="off">
+                    <label class="form-field-subscription">
+                        <input type="email" class="form-input-subscription" name="mail" placeholder="E-mail" />
+                        <span class="form-label-subscription"></span>
+                    </label>
+                    <button type="submit" class="button-subscription">Подписаться
+                        <span class="icon-subscription">
+                            <svg class="icon-button" width="24" height="24">
+                                <use href="./images/icons.svg#icon-button"></use>
+                            </svg></span>
+                    </button>
+                </form>
             </div>
         </div>
     </footer>

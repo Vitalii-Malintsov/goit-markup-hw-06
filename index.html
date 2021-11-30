@@ -58,13 +58,7 @@
                 <h1 class="title-name">ЭФФЕКТИВНЫЕ РЕШЕНИЯ<br> ДЛЯ ВАШЕГО БИЗНЕСА</h1>
                 <button data-modal-open type="button" class="title-button">Заказать услугу</button>
             </div>
-            <div class="backdrop is-hidden"  data-modal>
-                <div class="modal">
-                    <button data-modal-close type="button" class="button-close">
-                        <img class="close" src="./images/close.jpg" alt="кнопка закрытия" width="11" height="11">
-                    </button>
-                </div>
-            </div>
+            
         </section>
 
         <!--Особенности/Feature-->
@@ -399,16 +393,63 @@
             </div>
             <div class="footer-subscription">
                 <h3 class="title-subscription">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h3>
-                    <form class="form" autocomplete="off">
-                        <label class="form-field">
-                            <input type="email" class="form-input" name="mail" placeholder=" " />
-                            <span class="form-label">E-mail</span>
+                    <form class="form-subscription" autocomplete="off">
+                        <label class="form-field-subscription">
+                            <input type="email" class="form-input-subscription" name="mail" placeholder="E-mail" />
+                            <span class="form-label-subscription"></span>
                         </label>
-                        <button type="submit" class="button-subscription">Подписаться</button>
+                        <button type="submit" class="button-subscription">Подписаться
+                            <span class="icon-subscription">
+                                <svg class="icon-button" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-button"></use>
+                                </svg>
+                            </span>
+                        </button>
                     </form>
             </div>
         </div>
     </footer>
+
+    <!--<Backdrop>-->
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button data-modal-close type="button" class="button-close">
+                <img class="close" src="./images/close.jpg" alt="кнопка закрытия" width="11" height="11">
+            </button>
+            <form class="form">
+                <p>Оставьте свои данные, мы вам перезвоним</p>
+                <div class="form-field">
+                    <label for="name">Имя</label>
+                    <input type="text" name="name" id="name" placeholder=" " />
+                </div>
+        
+                <div class="form-field">
+                    <label for="tel">Телефон</label>
+                    <input type="tel" name="tel" id="tel" placeholder=" " />
+                </div>
+        
+                <div class="form-field">
+                    <label for="mail">Почта</label>
+                    <input type="email" name="mail" id="mail" placeholder=" " />
+                </div>
+        
+                <div class="form-field">
+                    <label for="comment">Коментарий</label>
+                    <textarea class="comment" name="comment" id="comment" placeholder="Введите текст"></textarea>
+                </div>
+        
+                <div class="check-box">
+                    <input type="checkbox" name="policy" id="policy" />
+                    <label for="policy">Соглашаюсь с рассылкой и принимаю
+                        <span class="contract"><a href="">Условия договора</a></span>
+                    </label>
+                </div>
+                <button class="form-button" type="submit">Отправить</button>                
+            </form>
+        </div>
+    </div>
+
+
     <script src="./js/modal.js"></script>
 </body>
 </html>
