@@ -11,7 +11,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">    
     <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./css/modal.css">
+
 </head>
 
 <body>
@@ -433,7 +433,7 @@
                     <input type="email" name="mail" id="mail" placeholder=" " />
                 </div>
         
-                <div class="form-field">
+                <div class="textarea">
                     <label for="comment">Коментарий</label>
                     <textarea class="comment" name="comment" id="comment" placeholder="Введите текст"></textarea>
                 </div>
@@ -441,10 +441,13 @@
                 <div class="check-box">
                     <input type="checkbox" name="policy" id="policy" />
                     <label for="policy">Соглашаюсь с рассылкой и принимаю
-                        <span class="contract"><a href="">Условия договора</a></span>
+                        <span><a href="" class="contract">Условия договора</a></span>
                     </label>
                 </div>
-                <button class="form-button" type="submit">Отправить</button>                
+                <div class="form-button-box">
+                    <button class="form-button" type="submit">Отправить</button>
+                </div>
+                
             </form>
         </div>
     </div>
