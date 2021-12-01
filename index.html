@@ -414,7 +414,9 @@
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button data-modal-close type="button" class="button-close">
-                <img class="close" src="./images/close.jpg" alt="кнопка закрытия" width="11" height="11">
+                <svg class="icon-close" width="18" height="18">
+                    <use href="./images/icons.svg#icon-close"></use>
+                </svg>
             </button>
             <form class="form">
                 <p class="form-title">Оставьте свои данные, мы вам перезвоним</p>
@@ -444,13 +446,19 @@
         
                 <div class="textarea">
                     <label for="comment">Коментарий</label>
-                    <textarea class="comment" name="comment" id="comment" placeholder="Введите текст"></textarea>
+                    <textarea class="comment" 
+                    name="comment" 
+                    id="comment" 
+                    placeholder="Введите текст"
+                    cols="30"
+                    rows="5">
+                </textarea>
                 </div>
         
                 <div class="check-box">
                     <input type="checkbox" name="policy" id="policy" />
                     <label for="policy">Соглашаюсь с рассылкой и принимаю
-                        <span><a href="" class="contract">Условия договора</a></span>
+                        <a href="" class="contract">Условия договора</a>
                     </label>
                 </div>
                 <div class="form-button-box">
